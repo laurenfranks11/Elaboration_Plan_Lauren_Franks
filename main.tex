@@ -19,7 +19,7 @@
 \begin{document}
 
 \maketitle
-
+\tableofcontents
 \section{Objective}
 
 As identified in my scoping document, my overall objective is to develop social awareness and understanding of dataveillance processes and effects. I will achieve this by:
@@ -66,8 +66,8 @@ According to uBlock Origin's \href{https://github.com/gorhill/uBlock/wiki/Privac
 
 \noindent Features:
 
-The default settings of uBlock Origin automatically blocks ads, trackers and malware sites. You can turn it it off on any web page (white-listing it) by clicking the large blue on/off button. The 'zapper function' allows you to temporarily remove a particular item in a web-page such as an image, and the 'filter function' allows you to permanently remove an item so it won't reappear when the page is reloaded. The 'logger' allows you to view real-time network traffic within the browser. I have tried out all of these functions on several websites and they work as anticipated. \newline
-\newline
+The default settings of uBlock Origin automatically blocks ads, trackers and malware sites. You can turn it it off on any web page (white-listing it) by clicking the large blue on/off button. The 'zapper function' allows you to temporarily remove a particular item in a web-page such as an image, and the 'filter function' allows you to permanently remove an item so it won't reappear when the page is reloaded. The 'logger' allows you to view real-time network traffic within the browser. I have tried out all of these functions on several websites and they work as anticipated. 
+
 \begin{figure}[htp]
     \centering
     \includegraphics[width=10cm]{Functions labeled.jpg}
@@ -75,7 +75,7 @@ The default settings of uBlock Origin automatically blocks ads, trackers and mal
     \label{fig:uBlock Origin dashboard}
 \end{figure}
 
-\noindent Limitations:
+\noindent Limitations: \newline
 
 Like all privacy software, uBlock Origin relies on filter lists that contain lists of known third-party trackers. These lists are always being updated by users, but it also means that your privacy is compromised if you encounter a new or unknown third-party tracker.\newline
 \newline
@@ -83,11 +83,38 @@ Like all privacy software, uBlock Origin relies on filter lists that contain lis
 
 Given that uMatrix is a more complicated software and uBlock Origin will be able to accomplish my privacy objectives, I have decided not to proceed with testing uMatrix.\newline
 
+
+\noindent\href{https://trockerapp.github.io/}{Trocker v2.6.1}
+
+\noindent Transparency:
+
+Like uBlock Origin, Trocker is an open source software and the code is publicly available on Github. It runs locally and does not send or receive any information through the internet. \newline
+
+\noindent Features: Trocker automatically identifies when a tracking image is injected into an email and blocks it from loading. It successfully blocked images loading in my email accounts and told me how many tracking images each email had. 
+
+\begin{figure}[htp]
+    \centering
+    \includegraphics[width=16cm]{trocker ymail block.jpg}
+    \caption{Trocker blocking tracking pixels in my Yahoo Mail}
+    \label{fig:uBlock Origin dashboard}
+\end{figure}
+
+
+ \newline
+
+\noindent\href{https://www.torproject.org/}{The Tor Project}
+
+on I have decided not to test Tor as it goes beyond the scope of my objectives.
+
 \subsection{Digital presentation platform}
 \href{https://pages.github.com/}{GitHub Pages}
 
-Github Pages allows you to create a static, publicly accessible webpage from a GitHub repository. Uses some HTML language and it also supports \href{https://github.com/jekyll/jekyll}{Jekyll}, an open source tool used within GitHub Pages that transforms plain text files into websites and supports templates and drafts. 
+I was able to successfully create a very basic static webpage using GitHub Pages, viewable \href{https://laurenfranks11.github.io./}{here.} 
 
+\section{Conclusion and Next Steps}
+I have identified and tested three technologies, uBlock Origin, Trocker and GitHub Pages. Together they can conceivably accomplish my goal to to develop social awareness and understanding of dataveillance processes and effects.
 
+The next step will be to write my article further elucidating how privacy is compromised online and how uBlock Origin and Trocker function to protect privacy. I will then use GitHub pages to present my
 
 \end{document}
+ article.
